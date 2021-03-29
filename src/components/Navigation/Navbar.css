@@ -1,0 +1,11 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: navbar;
+    list-style-type: none;
+    border: solid 5px paleturquoise ;
+    margin: 0;
+}
+.navbar ul {
+}

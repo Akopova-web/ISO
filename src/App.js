@@ -1,25 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import AddSolve from './components/AddingSolve/AddingSolve';
+import Calendar from './components/Calendar/Calendar';
+import Navbar from './components/Navigation/Navbar';
+import Notification from './components/Notification/Notification';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+  return <div className="main_menu">
+    <Navbar />
+    <Notification />
+    <AddSolve />
+    <Calendar />
+</div>
 }
 
 export default App;

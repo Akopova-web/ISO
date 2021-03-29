@@ -1,0 +1,5 @@
+.notification {
+    grid-area: notification;
+    border: solid 5px rgb(44, 44, 44);
+    background-color: grey;
+}

@@ -1,0 +1,5 @@
+.adding {
+    grid-area: adding;
+    border: solid 5px rgb(44, 44, 44);
+    background-color: grey;
+}

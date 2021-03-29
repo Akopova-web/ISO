@@ -1,12 +1,17 @@
 .main_menu {
-    display: grid;
-    grid-template-areas:
-    "navbar notification adding"
-    "navbar calendar calendar";
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: 10% 1fr 1fr;
-  grid-gap: 5px;
-  height: 100vh;
-  margin: 5px;
+  display: grid;
+  grid-template-areas: "navbar content";
+  grid-template-rows: 1fr;
+  grid-template-columns: 10% 1fr;
+  grid-gap: 20px;
+  height: 90vh;
+  padding: 20px;
+  text-align: center;
+  background: rgb(61, 58, 58);
+}
+h1 {
+  background-color: rgb(61, 58, 58);
+  color: grey;
+  margin: 0;
   text-align: center;
 }

@@ -1,0 +1,10 @@
+.content {
+grid-area: content;
+display: grid;
+  grid-template-areas:
+    "notification adding"
+    "calendar calendar";
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}

@@ -1,11 +1,18 @@
 .navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    grid-area: navbar;
-    list-style-type: none;
-    border: solid 5px paleturquoise ;
-    margin: 0;
+  grid-area: navbar;
+  margin: 0;
+  border: solid 5px rgb(44, 44, 44);
+  background-color: grey;
 }
-.navbar ul {
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+  padding-left: 10px;
+  text-align: left;
+}
+.navbar a {
+  color: #000;
+  text-decoration: none;
 }

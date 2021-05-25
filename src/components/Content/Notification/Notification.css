@@ -1,5 +1,7 @@
 .notification {
-    grid-area: notification;
-    border: solid 5px rgb(44, 44, 44);
-    background-color: grey;
+    border: solid 5px #427065;
+    border-radius: 20%;
+    text-align: center;
+    width: 70%;
+    margin-right: 20px;
 }

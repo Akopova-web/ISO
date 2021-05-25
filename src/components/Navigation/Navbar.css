@@ -1,16 +1,16 @@
 .navbar {
   grid-area: navbar;
   margin: 0;
-  border: solid 5px rgb(44, 44, 44);
-  background-color: grey;
+  border: solid 5px #427065;
+  border-radius: 20%;
+  background-color: #427065;
 }
-ul {
+nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
   list-style-type: none;
-  padding-left: 10px;
-  text-align: left;
+  text-align: center;
 }
 .navbar a {
   color: #000;

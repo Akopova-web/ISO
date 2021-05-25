@@ -1,4 +1,4 @@
-.main_menu {
+.app_wrapper {
   display: grid;
   grid-template-areas: "navbar content";
   grid-template-rows: 1fr;
@@ -6,12 +6,14 @@
   grid-gap: 20px;
   height: 90vh;
   padding: 20px;
-  text-align: center;
-  background: rgb(61, 58, 58);
+  text-align: left;
+  background: #d0d9d4;
 }
-h1 {
-  background-color: rgb(61, 58, 58);
-  color: grey;
-  margin: 0;
-  text-align: center;
-}
+
+/* Палитра
+#427065 - самый темный синий
+#90a19e - более светлый синий
+#d0d9d4 - совсем светлый синий
+#ba9f8c - светло-терракотовый
+#9c5b48 - пожухлый лист
+https://color.romanuke.com/tsvetovaya-palitra-1169/ */

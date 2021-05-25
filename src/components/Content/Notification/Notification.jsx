@@ -1,9 +1,10 @@
 import React from 'react';
+import { TasksList } from '../../Tasks/TasksList';
 import './Notification.css'
 
-const Notification = () => {
+const Notification = ({tasks}) => {
     return <div className="notification">
-        Тут будут уведомления
+        {/* <TasksList tasks={tasks} /> */}
     </div>
 }
 

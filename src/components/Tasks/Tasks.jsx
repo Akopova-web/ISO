@@ -1,17 +1,19 @@
 import React from "react";
-import "./Tasks.css"
+import "./Tasks.css";
+import { TasksList } from "./TasksList";
+import TaskReduxForm from "./TaskForm";
 
-const Tasks = (props) => {
+const Tasks = ({tasks}) => {
+  const onSubmit = () => {
+    alert ("Форма работает!")
+  }
   return (
-    <form className="taskForm" action="#">
-      <button>Выберите опцию</button>
-      <div>Кто выполняет: <input type="text" /></div>
-      <div>Крайний срок: <input type="text" /></div>
-      <div>Описание задачи: <input type="text" /></div>
-      <div>Итерация: <input type="text" /></div>
-      <div>Комментарии: <input type="text" /></div>
-      <button>Выполнить</button>
-    </form>
+    <div className="tasksPage">
+      <h3>Добавление задачи</h3>
+      <h3>Список текущих задач</h3>
+      <TaskReduxForm onSubmit={onSubmit}/>
+      <TasksList tasks={tasks} />
+    </div>
   );
 };
 export default Tasks;

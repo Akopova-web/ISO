@@ -1,0 +1,23 @@
+.taskTable {
+  border-collapse: collapse;
+  background: #ba9f8c;
+  border-radius: 20%;
+  text-align: center;
+}
+
+.taskTable td {
+  border-top: 5px solid #9c5b48;
+}
+.taskTable img {
+  width: 30px;
+  cursor: pointer;
+}
+.taskTable button {
+  color: transparent;
+  background: transparent;
+  border: transparent;
+  margin: 0;
+}
+button:focus {
+  outline: none;
+}

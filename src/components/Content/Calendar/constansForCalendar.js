@@ -1,4 +1,3 @@
-let date = new Date();
 export const daysOfWeek = [
   "Понедельник",
   "Вторник",
@@ -22,14 +21,17 @@ export const objectiveMonths = [
   "ноября",
   "декабря",
 ];
-let orderNumber;
-date.getDay() === 0 ? (orderNumber = 6) : (orderNumber = date.getDay() - 1);
-
-const numberOfDay = date.getDate();
-export const firstNumberOfWeek = numberOfDay - orderNumber;
-export const lastNumberOfWeek = firstNumberOfWeek + 6;
-export let weekNumbers = [];
-for (let i = firstNumberOfWeek; i <= lastNumberOfWeek; i++) {
-  weekNumbers.push(i);
-}
-
+export const months = [
+  "Январь",
+  "Февраль",
+  "Март",
+  "Апрель",
+  "Май",
+  "Июнь",
+  "Июль",
+  "Август",
+  "Сентябрь",
+  "Октябрь",
+  "Ноябрь",
+  "Декабрь",
+];

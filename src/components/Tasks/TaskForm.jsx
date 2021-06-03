@@ -2,21 +2,33 @@ import React from "react";
 import { Field, reduxForm } from "redux-form";
 import "./TaskForm.css";
 
-
-const TaskForm = ({handleSubmit}) => {
+const TaskForm = ({ handleSubmit }) => {
   return (
     <form onSubmit={handleSubmit}>
-     <div>Исполнитель: <Field name={"executor"} component={"input"} placeholder={"Исполнитель"} /></div>
-     {/* <div> Крайний срок: <Field type="text" name="deadline" component="input"  /></div>
-     <div> Время: <Field type="text" name="time" component="input"  /></div>
-     <div> Описание задачи: <Field type="text" name="description" component="input"  /></div>
-     <div> Итерация: <Field type="text" name="iteration" component="input"  /></div>
-     <div> Комментарии: <Field type="text" name="comments" component="input"  /></div> */}
-      <button>Добавить</button>
+      <div>Исполнитель: </div>{" "}
+      <Field
+        name={"executor"}
+        component={"input"}
+        placeholder={"Исполнитель"}
+      />
+      <div> Крайний срок: </div>{" "}
+      <Field
+        type="text"
+        name="deadline"
+        component="input"
+        placeholder="Крайний срок"
+      />
+      <div> Время: </div> 
+      <Field type="text" name="time" component="input" placeholder="Время"/>
+      <div> Описание задачи: </div>{" "}
+      <Field type="text" name="description" component="input" placeholder="Описание задачи" />
+      <div> Комментарии: </div>{" "}
+      <Field type="text" name="comments" component="input" placeholder="Комментарии"/>
+      <div><button>Добавить</button></div>
     </form>
   );
 };
 
-const TaskReduxForm = reduxForm({form: "current_task"})(TaskForm);
+const TaskReduxForm = reduxForm({ form: "current_task" })(TaskForm);
 
 export default TaskReduxForm;

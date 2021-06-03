@@ -11,7 +11,6 @@ export const TasksList = ({ tasks }) => {
           <th>Крайний срок</th>
           <th>Время</th>
           <th>Описание</th>
-          <th>Итерация</th>
           <th>Комментарии</th>
         </tr>
       </thead>
@@ -22,7 +21,6 @@ export const TasksList = ({ tasks }) => {
             <td>{task.deadline}</td>
             <td>{task.time}</td>
             <td>{task.description}</td>
-            <td>{task.iteration}</td>
             <td>{task.comments}</td>
             <td><button><img src={doneButton}></img></button></td>
           </tr>

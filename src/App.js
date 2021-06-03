@@ -5,7 +5,7 @@ import Calendar from "./components/Content/Calendar/Calendar";
 import { Content } from "./components/Content/Content";
 import { store } from "./components/context/redux/store";
 import { Navbar } from "./components/Navigation/Navbar";
-import Tasks from "./components/Tasks/Tasks";
+import TaskContainer from "./components/Tasks/TaskContainer";
 
 const App = () => {
   return (
@@ -23,7 +23,7 @@ const App = () => {
             />
             <Route
               path="/tasks"
-              render={() => <Tasks tasks={store.getState().tasksPage.tasks} />}
+              render={() => <TaskContainer tasks={store.getState().tasksPage.tasks} />}
             />
             <Route path="/calendar" render={() => <Calendar />} />
           </Switch>
